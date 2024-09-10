@@ -34,6 +34,20 @@ namespace RadFixes
                 var deco = ___settingsUI.GetComponentsInChildren<Transform>().FirstOrDefault(k => k.name == "deco (1)");
                 Object.Destroy(deco.gameObject);
             }
+
+            [HarmonyPrefix]
+            [HarmonyPatch("GameToSettings")]
+            public static void PauseSound()
+            {
+                AudioListener.pause = true;
+            }
+
+            [HarmonyPrefix]
+            [HarmonyPatch("SettingsToGame")]
+            public static void UnPauseSound()
+            {
+                AudioListener.pause = false;
+            }
         }
 
         [HarmonyPatch(typeof(BackupSavesListUI))]

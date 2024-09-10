@@ -10,7 +10,7 @@ namespace RadFixes
     {
         public const string PLUGIN_GUID = "com.raddude82.radfixes";
         public const string PLUGIN_NAME = "RadFixes";
-        public const string PLUGIN_VERSION = "1.0.0";
+        public const string PLUGIN_VERSION = "1.0.1";
 
         internal static Plugin instance;
         internal static ManualLogSource logger;
