@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
 
 - UI sounds playing when you are in another application
 
-- Fishing rod reel rotating the wrong way when reeling in
+- Fishing rod reel rotating the opposite way
 
 - Backup saves for save slot one not popping up when hovering over it until you hover over another save slot
 
