@@ -119,5 +119,22 @@ namespace RadFixes
                 return false;
             }
         }
+
+        // fix for tea boxes and tabacco crates rotated wierdly when in inventory
+        [HarmonyPatch(typeof(ShipItem), "Awake")]
+        private class ShipItemRotationPatches
+        {
+            public static void Postfix(ShipItem __instance)
+            {
+                if (!enableInventoryRotationFix.Value)
+                    return;
+
+                if (__instance is ShipItemTea || __instance.transform.name.Contains("crate of tobacco"))
+                {
+                    __instance.inventoryRotation = 180;
+                    __instance.inventoryRotationX = 270;
+                }
+            }
+        }
     }
 }

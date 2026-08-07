@@ -14,9 +14,8 @@ namespace RadFixes
             public static bool Prefix(ItemRigidbody ___itemRigidbodyC, ref Collider ___currentHook, ShipItem ___shipItem)
             {
                 if (___currentHook == null)
-                {
                     return false;
-                }
+
                 ___currentHook.GetComponent<ShipItemLampHook>().RemoveJoint();
                 ___currentHook = null;
                 ___itemRigidbodyC.attached = false;

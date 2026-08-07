@@ -22,6 +22,7 @@ Fixes for various bugs in the game.
 * Last page of trade menu showing the same last item as the previous page.
 * Fishing rod reel rotating the opposite way.
 * CargoController mod affecting the gui.
+* Tea boxes and tobacco crates not rotated in inventory properly so you can see the label.
 
 ## Configurable
 

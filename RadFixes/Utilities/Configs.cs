@@ -8,6 +8,7 @@ namespace RadFixes
         internal static ConfigEntry<string> boatCameraMenuZoom;
         internal static ConfigEntry<bool> enableSinkingItemsFix;
         internal static ConfigEntry<bool> enableModGUIFix;
+        internal static ConfigEntry<bool> enableInventoryRotationFix;
 
         internal static void InitializeConfigs()
         {
@@ -38,6 +39,11 @@ namespace RadFixes
             enableModGUIFix = config.Bind(
                 "Settings",
                 "Stop CargoController from affecting other GUIs",
+                true);
+
+            enableInventoryRotationFix = config.Bind(
+                "Settings",
+                "Tobacco crate and tea box Inventory rotation fix",
                 true);
         }
     }
