@@ -23,6 +23,7 @@ Fixes for various bugs in the game.
 * Fishing rod reel rotating the opposite way.
 * CargoController mod affecting the gui.
 * Tea boxes and tobacco crates not rotated in inventory properly so you can see the label.
+* Damage to the boat when exiting shipyards.
 
 ## Configurable
 
